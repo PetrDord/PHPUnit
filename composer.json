@@ -1,5 +1,6 @@
 {
-  
+  "name": "phpunit",
+  "description": "using PHPUnit",
   "autoload": {
     "psr-4": {
       "Cal\\": "app/"
