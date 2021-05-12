@@ -22,16 +22,18 @@ use Cal\math\Calculator;
         
         $c->setX(5);
         $c->setY(4);
-        $this->assertSame($this->y+$this->x,9);
+        $result=$c->Plus();
+        $this->assertSame(9,$result);
 
     }
     public function testMinus()
     {
         $c = new Calculator;
         
-        $c->setX(5);
+       $c->setX(5);
         $c->setY(4);
-        $this->assertSame($this->x-$this->y,1);
+        $result=$c->Minus();
+        $this->assertSame(1,$result);
 
     }
     public function testKrat()
@@ -40,7 +42,8 @@ use Cal\math\Calculator;
         
         $c->setX(5);
         $c->setY(4);
-        $this->assertSame($this->x*$this->y,20);
+        $result=$c->Krat();
+        $this->assertSame(20,$result);
 
     }
     public function testDeleno()
@@ -49,7 +52,8 @@ use Cal\math\Calculator;
         
         $c->setX(10);
         $c->setY(2);
-        $this->assertSame($this->x/$this->y,5);
+        $result=$c->Deleno();
+        $this->assertSame(5,$result);
 
     }
 
