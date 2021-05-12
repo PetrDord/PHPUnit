@@ -1,6 +1,7 @@
 <?php
 
 
+
 use Cal\math\Calculator;
 
  final class CalculatorTest extends PHPUnit\Framework\TestCase {
@@ -21,7 +22,7 @@ use Cal\math\Calculator;
         
         $c->setX(5);
         $c->setY(4);
-        $this->assertPlus($this->y+$this->x,9);
+        $this->assertSame($this->y+$this->x,9);
 
     }
     public function testMinus()
@@ -30,7 +31,7 @@ use Cal\math\Calculator;
         
         $c->setX(5);
         $c->setY(4);
-        $this->assertMinus($this->x-$this->y,1);
+        $this->assertSame($this->x-$this->y,1);
 
     }
     public function testKrat()
@@ -39,7 +40,7 @@ use Cal\math\Calculator;
         
         $c->setX(5);
         $c->setY(4);
-        $this->assertKrat($this->x*$this->y,20);
+        $this->assertSame($this->x*$this->y,20);
 
     }
     public function testDeleno()
@@ -48,9 +49,10 @@ use Cal\math\Calculator;
         
         $c->setX(10);
         $c->setY(2);
-        $this->assertDeleno($this->x/$this->y,5);
+        $this->assertSame($this->x/$this->y,5);
 
     }
 
 
 }
+
