@@ -1,6 +1,5 @@
 {
-  "name": "bubilek/test",
-  "description": "Basic using PHPUnit",
+  
   "autoload": {
     "psr-4": {
       "Cal\\": "app/"
